@@ -1,12 +1,14 @@
 {
   "name": "universal-app",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "start": "expo start",
+    "start:sb": "sb-rn-get-stories && expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "storybook-generate": "sb-rn-get-stories",
+    "storybook-watch": "sb-rn-watcher"
   },
   "dependencies": {
     "expo": "^49.0.3",
@@ -20,21 +22,31 @@
     "react-native": "0.72.5",
     "react-native-gesture-handler": "~2.12.0",
     "react-native-reanimated": "~3.3.0",
-    "react-native-safe-area-context": "4.6.3",
     "react-native-screens": "~3.22.0",
-    "react-native-web": "~0.19.6"
+    "react-native-web": "~0.19.6",
+    "@types/react": "~18.2.14"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
-    "@babel/plugin-proposal-export-namespace-from": "^7.18.9"
+    "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
+    "@react-native-async-storage/async-storage": "^1.19.8",
+    "@react-native-community/datetimepicker": "^7.6.1",
+    "@react-native-community/slider": "^4.4.3",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-controls": "^6.5.16",
+    "@storybook/addon-ondevice-actions": "^6.5.7",
+    "@storybook/addon-ondevice-controls": "^6.5.7",
+    "@storybook/react-native": "^6.5.7",
+    "babel-loader": "^8.3.0",
+    "react-native-safe-area-context": "^4.7.4"
   },
-  "resolutions": {
-    "metro": "^0.73.7",
-    "metro-resolver": "^0.73.7"
-  },
-  "overrides": {
-    "metro": "^0.73.7",
-    "metro-resolver": "^0.73.7"
+  "expo": {
+    "install": {
+      "exclude": [
+        "@react-native-async-storage/async-storage",
+        "@react-native-community/datetimepicker"
+      ]
+    }
   },
   "private": true
 }

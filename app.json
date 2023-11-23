@@ -1,13 +1,18 @@
 {
   "expo": {
-    "scheme": "acme",
+     "name": "universal-app",
+    "slug": "universal-app",
+    "scheme": "universal-app",
     "web": {
       "bundler": "metro"
     },
     "plugins": [
       "expo-router"
     ],
-    "name": "universal-app",
-    "slug": "universal-app"
+    "experiments": {
+      "tsconfigPaths": true
+    }
+   
   }
+  
 }
