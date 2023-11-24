@@ -26,7 +26,7 @@ type Story = StoryObj<MyButtonProps>;
 export const Default: Story = {
   storyName: 'Default',
   args: {
-    text: 'Tap Me',
+    text: 'Tapz Me',
     disabled: false,
   },
 };
