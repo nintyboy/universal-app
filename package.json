@@ -36,7 +36,7 @@
     "@babel/core": "^7.20.0",
     "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@react-native-async-storage/async-storage": "^1.19.8",
-    "@react-native-community/datetimepicker": "^7.6.1",
+    "@react-native-community/datetimepicker": "7.2.0",
     "@react-native-community/slider": "4.4.2",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-controls": "^6.5.16",
@@ -67,8 +67,7 @@
   "expo": {
     "install": {
       "exclude": [
-        "@react-native-async-storage/async-storage",
-        "@react-native-community/datetimepicker"
+        "@react-native-async-storage/async-storage"
       ]
     }
   },

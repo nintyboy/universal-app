@@ -15,7 +15,7 @@ export const MyButton: React.FC<MyButtonProps> = ({
 }) => {
   return (
     <Container onPress={onPress} disabled={disabled}>
-      <Text>{text}</Text>
+      <Text_P>{text}</Text_P>
     </Container>
     // <TouchableOpacity
     //   onPress={onPress}
@@ -32,14 +32,11 @@ const Container = styled.TouchableOpacity`
   background-color: purple;
   border-radius: 8px;
   color: white;
+
 `;
 
-//  const styles = StyleSheet.create({
-//    container: {
-//      paddingHorizontal: 16,
-//      paddingVertical: 8,
-//      backgroundColor: "purple",
-//      borderRadius: 8,
-//    },
-//    text: { color: "white" },
-//  });
+const Text_P = styled.Text`
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+`;
